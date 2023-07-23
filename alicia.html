@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <title>Welcome to Alicia</title>
+    <style>
+ 
+html,body{
+  margin: 0 !important;
+  padding: 0 !important;
+    
+}
+.top{
+    font-weight: bold;
+    box-shadow: 5px 4px 20px;
+}
+.top-design{
+  color: black;
+
+}
+.con-resize .row .col-md-4 img{
+    height: 300px;
+}
+.navbar-brand{
+    text-transform: capitalize;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-family: "Century Gothic";
+}
+.header-menu ul li{
+    padding: 5px;
+}
+.header-menu ul li a {
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    padding: 15px; 
+}
+
+.header-menu ul li a:hover {
+    color: rgb(255, 255, 255);
+   
+}
+.header-menu ul li a.active {
+    color: green;
+  }
+
+.logo-img {
+max-width: 100px;
+}
+
+.image-logo{
+width: 50px;
+}
+.smaller-img {
+    max-width: 100px; /* Adjust this value to control the image size */
+    /* You can also add margin, padding, or other styles as needed */
+  }
+
+  
+  .content-div{
+    background-color: rgb(89, 89, 89);
+    color: white;
+    font-family: "Century Gothic";
+    height: 100%;
+  }
+  .con-container .col-md-4{
+    padding: 20px;
+
+  }
+  .con-container {
+    background-image: url("img/panglao-b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 20px;
+ 
+  }
+  /*  */
+  .accordion {
+    background-color: #ededed;
+    color: #000000;
+    cursor: pointer;
+     padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family: "Century Gothic";
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    
+  }
+  .con-accordion .row{
+    margin-bottom: 30px;
+    
+  }
+  .con-accordion .row .table-con{
+    font-size: 15px;
+    font-family: "Century Gothic";
+  }
+  .accordion-btn{
+    background-color:#cecece;
+    margin-bottom: 3px;
+  }
+  .con-accordion .row .table-con td{
+    font-weight: bold;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md top bg-warning sticky-top">
+        <div class="container-fluid">
+            <!-- Navigation Title -->
+            <a  class="navbar-brand top-design mx-5" href="index.html"><img src="img/logo.png" alt="" class="image-logo ">Laag Na</a>
+            <!-- Navigation Title -->
+            <!-- Navigation Button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigationExercise10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Button -->
+            <!-- Navigation List -->
+            <div class="collapse navbar-collapse header-menu  " id="navigationExercise10">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item ">
+                        <a href="touristSpot.html" class="nav-link">TOURIST SPOT</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="visitBohol.html" class="nav-link ">VISIT BOHOL</a>
+                        <!-- <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Sample 1</a>
+                            </li>
+                            <li><a href="" class="dropdown-item">Sample 2</a></li>
+                            
+                        </ul> -->
+                    </li>
+                    <li class="navbar-item">
+                        <a href="travelHighlights.html" class="nav-link">TRAVEL HIGHLIGHTS</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdownSample" data-bs-toggle="dropdown">OUTDOOR ACTIVITIES</a>
+                        <ul class="dropdown-menu text-center" >
+                            <li>
+                              
+                              <a href="mountainBiking.html" class="dropdown-item"><img src="img/mb.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trailRun.html" class="dropdown-item"><img src="img/tr.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trekking.html" class="dropdown-item"><img src="img/tk.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="diving.html" class="dropdown-item"><img src="img/d.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                          </ul>
+                      </li>
+                </ul>
+                
+            </div>
+             <!-- Navigation List -->
+        </div>
+      </nav>
+      <div class="container con-container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-white p-3">
+                    <h1 style="font-family: Century Gothic;">Alicia Panoramic Park</h1>
+                    <h5 style="font-family: Century Gothic; font-style: italic;"></h5>
+                </div>
+               
+            </div>    
+      </div>
+      <div class="container">
+        <div class="row justify-content-center g-2">
+                  
+            <div class="col-md-4">
+                <img src="img/alicia.jpg" alt="" class="w-100" style="height: 300px;">
+            </div>
+                  
+            <div class="col-md-4">
+                <img src="img/Alicia-Panoramic-Park.webp" alt="" class="w-100" style="height: 300px;">
+            </div>
+                  
+            <div class="col-md-4">
+                <img src="img/DJI_0249-2.jpg" alt="" class="w-100" style="height: 300px;">
+            </div>
+            <div class="col-md-4">
+                <img src="img/Mountain-Biking-TAPP-scaled.webp" alt="" class="w-100" style="height: 300px;">
+            </div>
+            <div class="col-md-4">
+                <img src="img/IMG_5909-scaled.jpg" alt="" class="w-100" style="height: 300px;">
+            </div>
+            <div class="col-md-4">
+                <img src="img/IMG_5891-scaled.jpg" alt="" class="w-100" style="height: 300px;">
+                <br><br>
+            
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/alicia.jpg" alt="" class="w-100" style="height: 300px;">
+            </div>
+            <div class="col-md-5 my-4 ">
+              <h3>Alicia Panoramic Park</h3>
+              <p style="text-align: justify;">The Alicia Panoramic Park features the breathtaking landscape of Binabaje Hills of Brgy. Cambaol in Alica Municipality. The hills, which rise to 400 meters above sea level, are mostly covered in tropical perennial grasses commonly known as Cogon. These tall green grasses wave gently as the breeze passes, giving a soft furry-like appearance to the hills, which is composed primarily of metamorphic rock – the Alicia Schist, the oldest rock in Bohol (Late Jurassic – Early Cretaceous, 146 mya – 66 mya). Many adventure-seekers enjoy trekking the ridge trails over the hills and the picture-perfect and stunnin green scenery.</p>
+            </div>
+        </div>
+      </div><br><br>
+   
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+    
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                var icon = this.querySelector(".icon");
+                
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    icon.innerHTML = "&#43;"; // Plus sign
+                } else {
+                    panel.style.display = "block";
+                    icon.innerHTML = "&#8722;"; // Minus sign
+                }
+            });
+        }
+    </script>
+     
+</body>
+</html>

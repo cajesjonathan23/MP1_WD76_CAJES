@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <title>UNESCO GEOPARK</title>
+    <style>
+ 
+html,body{
+  margin: 0 !important;
+  padding: 0 !important;
+   font-family: "Century Gothic"; 
+}
+.top{
+    font-weight: bold;
+    box-shadow: 5px 4px 20px;
+}
+.top-design{
+  color: black;
+
+}
+.con-resize .row .col-md-4 img{
+    height: 300px;
+}
+.navbar-brand{
+    text-transform: capitalize;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-family: "Century Gothic";
+}
+.header-menu ul li{
+    padding: 5px;
+}
+.header-menu ul li a {
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    padding: 15px; 
+}
+
+.header-menu ul li a:hover {
+    color: rgb(255, 255, 255);
+   
+}
+.header-menu ul li a.active {
+    color: green;
+  }
+
+.logo-img {
+max-width: 100px;
+}
+
+.image-logo{
+width: 50px;
+}
+.smaller-img {
+    max-width: 100px; /* Adjust this value to control the image size */
+    /* You can also add margin, padding, or other styles as needed */
+  }
+
+  
+  .content-div{
+    background-color: rgb(89, 89, 89);
+    color: white;
+    font-family: "Century Gothic";
+    height: 100%;
+  }
+  .con-container .col-md-4{
+    padding: 20px;
+
+  }
+  .con-container {
+    background-image: url("img/panglao-b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 20px;
+ 
+  }
+  /*  */
+  .accordion {
+    background-color: #ededed;
+    color: #000000;
+    cursor: pointer;
+     padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family: "Century Gothic";
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    
+  }
+  .con-accordion .row{
+    margin-bottom: 30px;
+    
+  }
+  .con-accordion .row .table-con{
+    font-size: 15px;
+    font-family: "Century Gothic";
+  }
+  .accordion-btn{
+    background-color:#cecece;
+    margin-bottom: 3px;
+  }
+  .con-accordion .row .table-con td{
+    font-weight: bold;
+  }
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md top bg-warning sticky-top">
+        <div class="container-fluid">
+            <!-- Navigation Title -->
+            <a  class="navbar-brand top-design mx-5" href="index.html"><img src="img/logo.png" alt="" class="image-logo ">Laag Na</a>
+            <!-- Navigation Title -->
+            <!-- Navigation Button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigationExercise10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Button -->
+            <!-- Navigation List -->
+            <div class="collapse navbar-collapse header-menu  " id="navigationExercise10">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item ">
+                        <a href="touristSpot.html" class="nav-link">TOURIST SPOT</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="visitBohol.html" class="nav-link ">VISIT BOHOL</a>
+                        <!-- <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Sample 1</a>
+                            </li>
+                            <li><a href="" class="dropdown-item">Sample 2</a></li>
+                            
+                        </ul> -->
+                    </li>
+                    <li class="navbar-item">
+                        <a href="travelHighlights.html" class="nav-link">TRAVEL HIGHLIGHTS</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdownSample" data-bs-toggle="dropdown">OUTDOOR ACTIVITIES</a>
+                        <ul class="dropdown-menu text-center" >
+                            <li>
+                              
+                              <a href="mountainBiking.html" class="dropdown-item"><img src="img/mb.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trailRun.html" class="dropdown-item"><img src="img/tr.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trekking.html" class="dropdown-item"><img src="img/tk.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="diving.html" class="dropdown-item"><img src="img/d.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                          </ul>
+                      </li>
+                </ul>
+                
+            </div>
+             <!-- Navigation List -->
+        </div>
+      </nav>
+      <div class="container con-container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-white p-3">
+                    <h1 style="font-family: Century Gothic;" class="text-center">Bohol Geopark</h1>
+                    <h5 style="font-family: Century Gothic; font-style: italic;"></h5>
+                </div>
+               
+            </div>    
+      </div>
+      <div class="container">
+        <div class="row justify-content-center g-5">
+            <div class="col-md-12 text-center">
+                <h3>GEOLOGIC HISTORY OF BOHOL</h3>
+            </div> 
+            <div class="col-md-6 text-center p-3">
+                <p style="text-align: justify;">The island of Bohol, sitting elegantly between several islands of Visayas and Mindanao, took different forms throughout its geologic history. Its parts did not come together in one fell swoop, but was pieced together geologically for long, long, long time. From its lowly undersea abyssal beginnings to its subaerial idyllic magnificence, its geologic history is marked by periods of tectonic turbulence and occasional quiescence spanning nearly a hundred and fifty million years in the making.
+                   <br><br> Its oldest rock, Alicia Schist, was forged in the depths of the sea between the Late Jurassic to Early Cretaceous (146 mya – 66 mya). It started as sediments that were deposited in an ocean basin far from its present location. The sediments were later metamorphosed into schist during its undersea lithospheric tectonic movements before converging with the Bohol Ophiolite. The Bohol Ophiolite is a slice of complete oceanic lithosphere that formed nowhere near its present spot. It was forged in the depths of an ancient sea as well. For a very protracted time during the Cretaceous to Paleocene (66 mya – 56 mya), it ramped onto the older Alicia Schist during their tectonic convergence, and thus shaped the basement rocks of Bohol on top of which all the other younger rocks were built upon. <br><br>
+                    Between the Paleocene to Late Eocene times (56 mya – 38 mya) there was a prolonged period of either an emergence from the sea, causing the erosion of rocks, or an absence of deposition, such that the rock record went missing altogether. However, a surge in undersea volcanism and deposition during the Late Eocene to Oligocene produced the Ubay Formation, with its volcanic rocks and interlayering sedimentaries. Meanwhile during the Early Oligocene (33 mya – 27 mya), the western part of the sea was favorably quiet and calm for the deposition of low energy Ilihan Shale.</p>
+            </div>  
+            <div class="col-md-6 text-center p-3">
+                <p style="text-align: justify;">Continuous magmatism below the surface of the rocks by the Late Oligocene time (27 mya – 23 mya) supplied molten material for the various igneous intrusions that were cutting through the older rocks. These now hardened rock intrusions such as Getafe Andesite, Talibon Diorite and Jagna Andesite, can be observed in either the northern part of Bohol or in the southeast. <br><br>
+                    The fledgling undersea platform of Bohol was beginning to take shape, mass and space, but was still well and truly submerged. In some places it had the right conditions for temperature and water depth to hold a niche for conquering minute organisms, such as forams, and invertebrates, such as corals, that make up some of the limestone from these early times. Orbitoid forams comprise the Wahig Limestone, which was formed in the Early to Middle Miocene (23 mya – 11 mya). A possibly brief period of falling sea or emerging land promoted erosion of the Wahig Limestone real estate and some older rocks. Another subsequent submergence provided excellent conditions for the planktic forams and nanoplanktons that later became part of the clastics, volcaniclastics and limestones of the Carmen Formation at the end of the Middle Miocene. The underwater environment in the continuously shallowing sea in the Late Miocene (11 mya – 5 mya) was suitable for the establishment of widespread coral reefs that formed the Sierra Bullones Limestone on top of the Carmen Formation, especially in the east. In the west, the growing undersea platform provided a niche for the extensive reef forming species which comprise the limestone member of the Maribojoc Formation by the Pliocene time (5 mya – 2 mya). Slow emergence of the land in the Late Pleistocene time (0.126 mya – 0.117 mya), due in part to tectonic movements and the eventual erosion of the land, contributed to the sculpting of the landscape of Bohol that we now see today.</p>
+            </div>     
+            <div class="col-md-5">
+               <h3> Chocolate Hills</h3>
+               <p  style="text-align: justify;">The unique karst landscape is composed of smooth, uniformly shaped conical isolated hills that cover a vast area in the central portion of the island. The site was once a platform of thick widespread buildup of coral reefs that thrived during the Pliocene, approximately 2-5 million years ago and later to form a sedimentary formation. Soon, this limestone formation was raised above the sea level and fractured. Rainwater, streams and groundwater dissolved the limestone, gradually forming the present landscape of cone karst.</p>
+            </div>
+                  
+            <div class="col-md-5">
+                <img src="img/chocohills-edit2.jpg" alt="" class="w-100" >
+            </div>
+            <div class="col-md-5">
+                <img src="img/hinagdanan4.jpg" alt="" class="w-100" >
+            </div>
+            <div class="col-md-5">
+                <h3> Hinagdanan Cave</h3>
+                <p  style="text-align: justify;">The Hinagdanan Cave is one of the many wondrous karst caves in the Province of Bohol. This cave was accidentally discovered by a farmer while clearing his land. Stumbling on a hole in the ground, curious, he dropped stone and heard a splash. He built a ladder, “hagdan”, and went down to find the cave’s hidden beauty, hence the origin of its name Hinagdanan. It boasts of several stalactite and stalagmite formations and a clear lagoon that is about 10 to 20 meters deep. Aside from its awe-inspiring natural beauty, Hinagdanan also played a significant role in the history of Bohol. The cave was used during Second World War as a hideout by locals to escape from the Japanese Imperial Army.</p>
+             </div>  
+             <div class="col-md-5">
+                <h3>Inabanga Rupture Site</h3>
+                <p  style="text-align: justify;">The Magnitude 7.2 earthquake in October 15, 2013 in Bohol damaged billions worth of infrastructures and properties including several centuries-old churches. It was caused by a previously unmapped fault which manifested on the land surface as an elongated fissure on the ground and can be traced for 6 kilometers from Brgy. New Anonang in Buenavista up to Brgy. Napo in Inabanga, and is believed to extend even further offshore. The most prominent expression of the fault is in Bgy. Anonang, Inabanga, where, a formerly flat rice field was cut and the northern part raised to up to 3 meters high, forming a conspicuous wall called a fault scarp. The scarp stretches for up to 2 kilometers long. The movement along the fault wherein one side moved upwards with respect to its opposite side as manifested in the fault scarp can only be caused by a tremendous amount of energy which is released during the Magnitude 7.2 earthquake.</p>
+             </div>
+                   
+             <div class="col-md-5">
+                 <img src="img/Inabanga-Fault-Scarp-1.png" alt="" class="w-100" >
+             </div>
+             <div class="col-md-5">
+                <img src="img/Maribojoc-Uplifted-Marine-Terrace-1.png" alt="" class="w-100" >
+                <img src="img/Maribojoc-Uplifted-Marine-Terrace-2.png" alt="" class="w-100" >
+            </div>
+            <div class="col-md-5">
+                <h3>Maribojoc Uplifted Marine Terrace</h3>
+                <p  style="text-align: justify;">A 7.2-magnitude earthquake that rocked Bohol on October 15, 2013 brought devastation everywhere on the island and some nearby island provinces. The shaking was the result of a demonstration of nature’s power that has been changing the face of the Earth for millions of years: uplift of blocks of land during movement along a fault. This time the coastal areas of Loon-Maribojoc were pushed approximately 1.5 meters upwards when motion occured along a new fault in Inabanga. What was once a portion of the sea bottom and an underwater reef was now thrusted above sea level, creating a newly raised marine terrace and shifting the coastline 50 meters seaward. This is the Maribojoc Uplifted Marine Terrace. It is declared as the Loon-Maribojoc Geologic Monument by the Department of Environment and Natural Resources under the DENR Administrative Order No. 2015-08. The geological monument covers 1.37 kilometers (137 hectares) of uplifted coastline within the towns of Loon and Maribojoc. <br><br>
+                    Older marine terraces can also be found inland as part of the limestones of Maribojoc Formation. They too were a result of tectonic uplift in the not so distant geologic past, proof of the immense power of nature to create ever changing landscapes.</p>
+             </div>  
+             <div class="col-md-5">
+                <h3>Loon Uplifted Marine Terrace
+                    (Coral Garden)</h3>
+                <p  style="text-align: justify;">One of the shoreline areas uplifted during the earthquake of October 15, 2013 is the presently named Loon Coastal Geomorphic Conservation Park which covers an area of 417 hectares. This former intertidal zone, where the tide sometimes submerged or exposed the land, is now an uplifted terrace and completely on dry land. It was raised approximately 1.5 meters vertically and the shoreline shifted 50 meters seawards.  The former barren land right after the earthquake is now teeming with sea purslane, a creeping succulent seagrass plant of the family Aizoaceae, that covers the land with a mat of red and orange color during sunny days, and a luxurious green color during rainy days. The locals call the area the Coral Garden, a popular new destination for tourists and residents alike.</p>
+             </div>
+                   
+             <div class="col-md-5">
+                 <img src="img/LOON-UPLIFTED-2.jpg" alt="" class="w-100" >
+             </div>
+          
+
+          
+      </div><br><br>
+      <button id="scrollToTopBtn" class="btn btn-success" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        // Get the scroll-to-top button element
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    
+        // Scroll smoothly to the top of the page when the button is clicked
+        scrollToTopBtn.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            
+        });
+
+ 
+ 
+    </script>
+     
+</body>
+</html>

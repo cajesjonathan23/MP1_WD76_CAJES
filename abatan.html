@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <title>Abatan River Tour</title>
+    <style>
+ 
+html,body{
+  margin: 0 !important;
+  padding: 0 !important;
+    
+}
+.top{
+    font-weight: bold;
+    box-shadow: 5px 4px 20px;
+}
+.top-design{
+  color: black;
+
+}
+.con-resize .row .col-md-4 img{
+    height: 300px;
+}
+.navbar-brand{
+    text-transform: capitalize;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-family: "Century Gothic";
+}
+.header-menu ul li{
+    padding: 5px;
+}
+.header-menu ul li a {
+    color: rgb(30, 30, 30);
+    font-size: 18px;
+    padding: 15px; 
+}
+
+.header-menu ul li a:hover {
+    color: rgb(255, 255, 255);
+   
+}
+.header-menu ul li a.active {
+    color: green;
+  }
+
+.logo-img {
+max-width: 100px;
+}
+
+.image-logo{
+width: 50px;
+}
+.smaller-img {
+    max-width: 100px; /* Adjust this value to control the image size */
+    /* You can also add margin, padding, or other styles as needed */
+  }
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+    
+  }
+  .content-div{
+    background-color: rgb(89, 89, 89);
+    color: white;
+    font-family: "Century Gothic";
+    height: 100%;
+  }
+  .con-container .col-md-4{
+    padding: 20px;
+
+  }
+  .con-container {
+    background-image: url("img/ab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
+  /*  */
+  .accordion {
+    background-color: #ededed;
+    color: #000000;
+    cursor: pointer;
+     padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+    font-family: "Century Gothic";
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #e5e5e5;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    
+  }
+  .con-accordion .row{
+    margin-bottom: 30px;
+    
+  }
+  .con-accordion .row .table-con{
+    font-size: 15px;
+    font-family: "Century Gothic";
+  }
+  .accordion-btn{
+    background-color:#cecece;
+    margin-bottom: 3px;
+  }
+  .con-accordion .row .table-con td{
+    font-weight: bold;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md top bg-warning sticky-top">
+        <div class="container-fluid">
+            <!-- Navigation Title -->
+            <a  class="navbar-brand top-design mx-5" href="index.html"><img src="img/logo.png" alt="" class="image-logo ">Laag Na</a>
+            <!-- Navigation Title -->
+            <!-- Navigation Button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigationExercise10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Button -->
+            <!-- Navigation List -->
+            <div class="collapse navbar-collapse header-menu  " id="navigationExercise10">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item ">
+                        <a href="touristSpot.html" class="nav-link">TOURIST SPOT</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="visitBohol.html" class="nav-link ">VISIT BOHOL</a>
+                        <!-- <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Sample 1</a>
+                            </li>
+                            <li><a href="" class="dropdown-item">Sample 2</a></li>
+                            
+                        </ul> -->
+                    </li>
+                    <li class="navbar-item">
+                        <a href="travelHighlights.html" class="nav-link">TRAVEL HIGHLIGHTS</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdownSample" data-bs-toggle="dropdown">OUTDOOR ACTIVITIES</a>
+                        <ul class="dropdown-menu text-center" >
+                            <li>
+                              
+                              <a href="mountainBiking.html" class="dropdown-item"><img src="img/mb.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trailRun.html" class="dropdown-item"><img src="img/tr.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trekking.html" class="dropdown-item"><img src="img/tk.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="diving.html" class="dropdown-item"><img src="img/d.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                          </ul>
+                      </li>
+                </ul>
+                
+            </div>
+             <!-- Navigation List -->
+        </div>
+      </nav>
+      <div class="container con-container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-dark">
+                    <h1 style="font-family: Century Gothic;">Abatan River Tour</h1>
+                    <h5 style="font-family: Century Gothic; font-style: italic;">Photo by adVANtuRES – Facebook</h5>
+                </div>
+               
+            </div>    
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <img src="img/abatan1-e1581141699184.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-md-5">
+                <p class="my-1">The Abatan River Life Tour started out in 2008 as an initiative by the Abatan River Development Management Council (ARDMC). The objective of the group is to boost not only the tourist spots in the area but also to generate jobs and income to the entire province. All the profits generated by the tour goes to the poor and the deprived in the participating municipalities.
+
+                  <br> <br> Abatan River is one of the three main rivers of Bohol. It used to be the main waterway of the people when the roads were still undeveloped. The river traverses through the town of Antequera to the town of Balilihan opening up to the Cortes nipa swamps.
+                    
+                    <br><br> The Abatan Life River Tour highlights the life of the Boholanos.  The tour will take guests to lush greeneries, bushes, trees, and other sceneries the river has to offer.</p>
+            </div>
+        </div>
+      </div><br><br>
+      <div class="container con-accordion">
+       
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <button class="accordion accordion-btn">
+              <span class="icon">&#43;</span> 
+              Information of Eco-Tour
+          </button>
+          
+          <div class="panel">
+            <table class="table table-bordered w-100 table-con">
+              <tr>
+                  <td>Address</td>
+                  <td>Cortes, Bohol (Abatan River Visitor Center)</td>
+              </tr>
+              <tr>
+                  <td>How to Get There</td>
+                  <td>Take any vehicle from the city; the ride takes 15 minutes.</td>
+              </tr>
+              <tr>
+                  <td>Schedule</td>
+                  <td>	Everyday for Flexi Tour and Night Tour (6:30p.m., 7:30 p.m., & 8:30 p.m.)</td>
+              </tr>
+              <tr>
+                  <td>What is included?</td>
+                  <td>	
+                      *Tour Guide <br>
+                      
+                      *Sightseeing to natural wonders and witness cultural performances.</td>
+              </tr>
+              <tr>
+                  <td>What to wear?</td>
+                  <td>	Anything comfortable</td>
+              </tr>
+              <tr>
+                  <td>What to bring?</td>
+                  <td>	For kayaking, you can bring dry bag.</td>
+              </tr>
+              <tr>
+                  <td>Does the eco-tour accept bookings?</td>
+                  <td>	YES.</td>
+              </tr>
+              <tr>
+                  <td>Contact Person</td>
+                  <td>Ms. Emmie Roslinda</td>
+              </tr>
+              <tr>
+                  <td>Contact Number	</td>
+                  <td>(038) 503-9655 (Visitor Center) ; (038) 416-0067 (PROCESS Bohol)</td>
+              </tr>
+              <tr>
+                  <td>E-mail	</td>
+                  <td>abatanriver@gmail.com ; abatan river firefly tour (FB Page)</td>
+              </tr>
+            
+              
+            </table>
+          </div>
+          
+          </div>
+            
+            
+        </div>
+        
+      </div>
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+    
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                var icon = this.querySelector(".icon");
+                
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    icon.innerHTML = "&#43;"; // Plus sign
+                } else {
+                    panel.style.display = "block";
+                    icon.innerHTML = "&#8722;"; // Minus sign
+                }
+            });
+        }
+    </script>
+     
+</body>
+</html>

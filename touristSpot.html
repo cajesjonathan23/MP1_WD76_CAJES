@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Bohol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-IEQyTGkKfBgTtljeIhJ7jfeqOW5+4LBl1k5yT06z8iijh7YdsR/HxJCgQo9kfYYvIKW3VNN50q/7O5Z4gPfdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100%;
+            font-family: "Century Gothic";
+        }
+
+        /* Top navigation bar styles */
+        .top {
+            font-weight: bold;
+            box-shadow: 5px 4px 20px;
+        }
+
+        .top-design {
+            color: black;
+        }
+
+        .navbar-brand {
+            text-transform: capitalize;
+            font-size: 25px;
+            font-family: "Century Gothic";
+        }
+
+        .header-menu ul li {
+            padding: 5px;
+        }
+
+        .header-menu ul li a {
+            color: rgb(30, 30, 30);
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        .header-menu ul li a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .header-menu ul li a.active {
+            color: green;
+        }
+
+        .image-logo {
+            width: 50px;
+        }
+        .smaller-img {
+        max-width: 100px;
+    
+        } 
+
+        /* Side navigation styles */
+        .side-nav {
+            width: 100%; /* Changed width to 100% for responsiveness */
+            height: 100%;
+            position: fixed;
+            background-color: #5a5e5b;
+            z-index: 10;
+            margin-top: 30px;
+        }
+        /* Add media query for screens with a maximum width of 767px (i.e., mobile devices) */
+@media (max-width: 767px) {
+    .side-nav {
+        margin-top: 40px;
+        width: 100%;
+        height: auto;
+        position: static; 
+        background-color: #5a5e5b;
+        margin-bottom: 20px; 
+    }
+
+    .side-nav ul {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        padding: 50px; 
+    }
+
+    .side-nav ul li {
+        flex: 0 0 45%;
+        margin-bottom: 10px;
+    }
+}
+
+        .side-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .side-nav ul li {
+            list-style: none;
+            padding: 10px;
+            border-bottom: solid 1px rgb(134, 134, 134);
+        }
+
+        .side-nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: "Century Gothic";
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        .side-nav ul li:hover {
+            background-color: #ffc107;
+        }
+
+        /* Content area styles */
+        .content {
+            margin-top: 50px;
+            padding: 20px;
+            
+        }
+        
+        .card-img-top {
+            max-height: 200px; 
+            object-fit: cover;
+        }
+
+        /* Media queries for responsiveness */
+        @media (min-width: 768px) {
+            .side-nav {
+                width: 15%; 
+            }
+
+            .content {
+                margin-left: 15%;
+            }
+        }
+        #scrollToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+    }
+ 
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md top bg-warning fixed-top">
+        <div class="container-fluid">
+            <!-- Navigation Title -->
+            <a class="navbar-brand top-design mx-5" href="index.html"><img src="img/logo.png" alt="" class="image-logo ">Laag Na</a>
+            <!-- Navigation Title -->
+            <!-- Navigation Button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigationExercise10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Button -->
+            <!-- Navigation List -->
+            <div class="collapse navbar-collapse header-menu" id="navigationExercise10">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a href="" class="nav-link">TOURIST SPOT</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="visitBohol.html" class="nav-link">VISIT BOHOL</a>
+                        <!-- <ul class="dropdown-menu">
+                            <li>
+                                <a href="" class="dropdown-item">Sample 1</a>
+                            </li>
+                            <li><a href="" class="dropdown-item">Sample 2</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="navbar-item">
+                        <a href="travelHighlights.html" class="nav-link">TRAVEL HIGHLIGHTS</a>
+                    </li>
+                    <li class="navbar-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdownSample" data-bs-toggle="dropdown">OUTDOOR ACTIVITIES</a>
+                        <ul class="dropdown-menu text-center" >
+                            <li>
+                              
+                              <a href="mountainBiking.html" class="dropdown-item"><img src="img/mb.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trailRun.html" class="dropdown-item"><img src="img/tr.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="trekking.html" class="dropdown-item"><img src="img/tk.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                            <li>
+                              <a href="diving.html" class="dropdown-item"><img src="img/d.png" alt="" class="smaller-img w-100"></a>
+                            </li>
+                          </ul>
+                    </li>
+                </ul>
+            </div>
+             <!-- Navigation List -->
+        </div>
+    </nav><br><br>
+    
+    <div style="clear: both;"></div>
+    <div class="side-nav">
+        <ul id="sideNavList">
+            <li><a id="beachLink" href="#beachesImages">Beach</a></li>
+            <li><a id="mountainLink" href="#mountainImages">Mountain</a></li>
+            <li><a id="riverLink" href="#riverImages">River</a></li>
+            <li><a id="hotelLink" href="#hotelImages">Hotel</a></li>
+            <li><a id="delicaciesLink" href="#delicaciesImages">Delicacies</a></li>
+            <li><a id="geositesLink" href="#geositesImages">Caves</a></li>
+            <li><a id="museumLink" href="#museumImages">Churches</a></li>
+        </ul>
+    </div>
+   
+    <div class="col-md-10 content">
+        <!-- <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+           
+            </div>
+        </div> -->
+        
+
+        <div id="beachesImages" style="display: none;">
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card ">
+                        <img src="img/alona-beach-bohol-panglao-450x215.jpg" alt=""  style="height: 170px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Alona Beach</h5><hr>
+                            <p class="card-text">Located in Panglao Island Bohol Philippines.</p>
+                        </div>
+                    </div>
+                </div>     
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/dumaluan-beach-panglao-bohol-450x215.jpg" alt="" style="height: 170px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Dumaluan Beach</h5><hr>
+                            <p class="card-text">Located in Panglao Island Bohol Philippines.</p>
+                        </div>
+                    </div>
+                </div>          
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/panglao-b.jpg" alt=""  style="height: 170px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Panglao Beach</h5><hr>
+                            <p class="card-text">Located in Panglao Island Bohol Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/alona2.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alona Beach</h5>
+                            <p class="card-text">This is the content of Card 4.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/alona2.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alona Beach</h5>
+                            <p class="card-text">This is the content of Card 5.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/alona2.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alona Beach</h5>
+                            <p class="card-text">This is the content of Card 6.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+        <div id="mountainImages" style="display: none;">
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/hill.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Hills</h5><hr>
+                            <p class="card-text">Located in Carmen Bohol Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/panoramic.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alicia Panoramic Park</h5><hr>
+                            <p class="card-text">Located in Alicia Bohol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/hill.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Hills</h5><hr>
+                            <p class="card-text">Located in Carmen Bohol Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/panoramic.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alicia Panoramic Park</h5><hr>
+                            <p class="card-text">Located in Alicia Bohol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/panoramic.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alicia Panoramic Park</h5><hr>
+                            <p class="card-text">Located in Alicia Bohol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/panoramic.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Alicia Panoramic Park</h5><hr>
+                            <p class="card-text">Located in Alicia Bohol.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+        <div id="riverImages" style="display: none;">
+            <div class="row my-3 g-3">
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <img src="img/river.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">The Loboc River (also called Loay River )</h5><hr>
+                            <p class="card-text">The source of the Loboc River is located in the town of Carmen, almost in the center of Bohol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <img src="img/river.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">The Loboc River (also called Loay River )</h5><hr>
+                            <p class="card-text">The source of the Loboc River is located in the town of Carmen, almost in the center of Bohol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <img src="img/river.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">The Loboc River (also called Loay River )</h5><hr>
+                            <p class="card-text">The source of the Loboc River is located in the town of Carmen, almost in the center of Bohol</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/river2.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Abatan River</h5><hr>
+                            <p class="card-text">The Abatan River Life Tour started out in 2008 as an initiative by the Abatan River Development Management Council (ARDMC).</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/river2.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Abatan River</h5><hr>
+                            <p class="card-text">The Abatan River Life Tour started out in 2008 as an initiative by the Abatan River Development Management Council (ARDMC).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/river2.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Abatan River</h5><hr>
+                            <p class="card-text">The Abatan River Life Tour started out in 2008 as an initiative by the Abatan River Development Management Council (ARDMC).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+        <div id="hotelImages" style="display: none;">
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Hotels.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel</h5>
+                            <p class="card-text">This is the content of Card 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Hotels.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel</h5>
+                            <p class="card-text">This is the content of Card 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Hotels.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel</h5>
+                            <p class="card-text">This is the content of Card 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Hotels.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel</h5>
+                            <p class="card-text">This is the content of Card 4.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Hotels.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel</h5>
+                            <p class="card-text">This is the content of Card 5.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Hotels.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel</h5>
+                            <p class="card-text">This is the content of Card 6.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+        <div id="delicaciesImages" style="display: none;">
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/calamay.jpg" alt="" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Kalamay sa Bohol</h5><hr>
+                            <p class="card-text">Jagna is known as the “Calamay County” of Bohol. Location: Jagna Bohol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Chicken_Halang_Halang.jpg" alt="" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Halang-Halang</h5><hr>
+                            <p class="card-text">Chicken Halang Halang, a specialty mix of your favorite viands, the Chicken Tinola or Chicken Ginger Soup, and the Ginataang Manok or Chicken Curry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Tableya_Chocolate.jpg" alt="" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Tableya Chocolate</h5><hr>
+                            <p class="card-text">This sweet Bohol delicacy comprises ground cacao beans formed into small, round balls. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 g-3">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Broas_or_Ladyfingers.jpg " alt="" >
+                        <div class="card-body">
+                            <h5 class="card-title">Broas or Ladyfingers</h5><hr>
+                            <p class="card-text">Ladyfingers, locally known as broas and more famous in Baclayon, Bohol, are crispy yet lightweight delicacies that excite your mouth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Peanut_Kisses.jpg" alt="" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title"> Peanut Kisses</h5><hr>
+                            <p class="card-text">Peanut Kisses is an original Bohol delicacy inspired by the world-renowned treat Hershey’s Kisses Chocolate.</p>
+                        </div>
+                    </div>
+                </div>
+          
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+        <div id="geositesImages" style="display: none;">
+            <div class="row my-3 g-3">
+                <!-- Add cards and images for Geosites here -->
+                <!-- For example: -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/hinagdanan.jpg" alt="" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Hinagdanan Cave</h5><hr>
+                            <p class="card-text">Located in Panglao Island Bohol in the Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/cabagnow-cave-pool-7 (1).jpg" alt="" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Cabagnow Cave</h5><hr>
+                            <p class="card-text">Located in Anda on Bohol Island in the Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/princess-manan-aw-cave.jpg" alt="" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Princess Manan-aw Cave</h5><hr>
+                            <p class="card-text">Princess Manan-aw cave is one of the numerous caves included in the Cagong-cagong cave system..</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards and images as needed -->
+            </div>
+            <div class="row mx-5">
+                <!-- Add more rows of cards and images as needed -->
+            </div>
+        </div>
+        <div id="museumImages" style="display: none;">
+            <div class="row my-3 g-3">
+                <!-- Museum Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/lila.jpg" alt=""  style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Holy Rosary Parish in Lila in Bohol, Philippines</h5>
+                            <hr>
+                            <p class="card-text">Location: Bohol Circumferential Rd, Lila, 6304 Bohol, Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Museum Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/saint.jpg" alt=""  style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">St. Paul the Apostle Church in Inabanga in Bohol, Philippines</h5><hr>
+                            <p class="card-text">Location: St. Paul the Apostle Parish Pastoral Center, Poblacion, Inabanga, Bohol, Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/x.jpg" alt=""  style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Santo Niño Parish Church in Valencia in Bohol, Philippines</h5><hr>
+                            <p class="card-text">Location: Valencia, Bohol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/ubay.jpg" alt=""  style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Ubay Church in Ubay in Bohol, Philippines</h5><hr>
+                            <p class="card-text">Location: Ubay, Bohol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/la.jpg" alt=""  style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">La Purisima Concepcion de la Virgen Maria Parish Church in Baclayon in Bohol, Philippines</h5><hr>
+                            <p class="card-text">Location: Baclayon, Bohol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/dauis.jpg" alt=""  style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">6. Our Lady of Assumption Church in Dauis in Bohol, Philippines</h5><hr>
+                            <p class="card-text">Location: Dauis, Bohol</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+            <!-- Add more rows of cards if necessary -->
+        </div>
+        
+        <button id="scrollToTopBtn" class="btn btn-success ms-auto" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function toggleImages(category) {
+            // Hide all image divs first
+            var imageDivs = document.querySelectorAll(".image-category");
+            imageDivs.forEach(function (div) {
+                div.style.display = "none";
+            });
+    
+            // Show the selected category's image div
+            var categoryImagesDiv = document.getElementById(category + "Images");
+            categoryImagesDiv.style.display = "block";
+        }
+    
+        // Add event listeners to the side navigation links
+        var beachLink = document.getElementById("beachLink");
+        beachLink.addEventListener("click", function () {
+            toggleImages("beaches");
+        });
+    
+        var mountainLink = document.getElementById("mountainLink");
+        mountainLink.addEventListener("click", function () {
+            toggleImages("mountain");
+        });
+    
+        var riverLink = document.getElementById("riverLink");
+        riverLink.addEventListener("click", function () {
+            toggleImages("river");
+        });
+    
+        var hotelLink = document.getElementById("hotelLink");
+        hotelLink.addEventListener("click", function () {
+            toggleImages("hotel");
+        });
+    
+        var delicaciesLink = document.getElementById("delicaciesLink");
+        delicaciesLink.addEventListener("click", function () {
+            toggleImages("delicacies");
+        });
+    
+        var geositesLink = document.getElementById("geositesLink");
+        geositesLink.addEventListener("click", function () {
+            toggleImages("geosites");
+        });
+    
+        var museumLink = document.getElementById("museumLink");
+        museumLink.addEventListener("click", function () {
+            toggleImages("museum");
+        });
+
+
+        // Get the scroll-to-top button element
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    
+        // Scroll smoothly to the top of the page when the button is clicked
+        scrollToTopBtn.addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            
+        });
+    </script>
+    
+    
+    
+    
+    
+    
+</body>
+</html>
