@@ -45,7 +45,19 @@ max-width: 100px;
 .image-logo{
 width: 50px;
 }
+@media (max-width: 768px) {
+  .dropdown-menu.text-center {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
 
+  .dropdown-menu.text-center li {
+      width: 50%; /* Set each item to take 50% of the width to create two columns */
+      box-sizing: border-box; /* Include padding in the item's width calculation */
+      padding: 5px; /* Adjust the padding as needed */
+  }
+}
 
 #scrollToTopBtn {
     position: fixed;

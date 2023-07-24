@@ -125,6 +125,19 @@ width: 50px;
   .con-accordion .row .table-con td{
     font-weight: bold;
   }
+  @media (max-width: 768px) {
+        .dropdown-menu.text-center {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dropdown-menu.text-center li {
+            width: 50%; /* Set each item to take 50% of the width to create two columns */
+            box-sizing: border-box; /* Include padding in the item's width calculation */
+            padding: 5px; /* Adjust the padding as needed */
+        }
+    }
     </style>
 </head>
 <body>
